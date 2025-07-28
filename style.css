@@ -34,7 +34,6 @@ body {
 
 /* ----------------------------------------- */
 .banner-main {
-  background: #c62828 url("/img/banner.png");
   background-size: cover;
   min-height: 168px;
   display: flex;
@@ -47,6 +46,8 @@ body {
   align-items: center;
   flex-shrink: 0;
   padding: 0.5rem 2rem;
+  background: url("/img/banner-mark.png");
+  height: 168px;
 }
 .banner-logo {
   max-width: 90px;
@@ -279,4 +280,238 @@ body {
 #menuModal .collapse > li > a {
   padding-left: 34px;
   font-size: 1rem;
+}
+
+.general-information-box {
+  padding: 1.5rem;
+}
+.general-information-title {
+  font-weight: bold;
+  color: #d51c24;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+.general-information-list {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.general-information-list li {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+.general-information-label {
+  font-weight: bold;
+}
+
+.general-information-img {
+  width: 100%;
+}
+
+.general-information-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.center-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.card-custom-img {
+  background: #fff;
+  border-radius: 60px 0 60px 0;
+  padding: 16px; /* padding trắng */
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
+  display: inline-block;
+  overflow: hidden;
+  width: 645px;
+  height: 350px;
+  position: absolute;
+  top: -140px;
+}
+.card-custom-img-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 48px 0 48px 48px; /* nhỏ hơn card ngoài để lộ padding */
+  overflow: hidden;
+  height: 100%;
+}
+.card-custom-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#owl-carousel-banner,
+#owl-carousel-banner .owl-stage-outer,
+#owl-carousel-banner .owl-stage,
+#owl-carousel-banner .owl-item {
+  height: 168px !important;
+  min-height: 168px !important;
+  max-height: 168px !important;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+#owl-carousel-banner .owl-item .item img {
+  height: 168px !important;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 0;
+}
+
+.banner-img-carousel {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.red-dot-flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.red-dot {
+  min-width: 18px;
+  min-height: 18px;
+  width: 18px;
+  height: 18px;
+  background: #d61f1f;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px #d61f1f;
+  z-index: 2;
+  flex-shrink: 0;
+  margin-left: -10px;
+  margin-right: -10px;
+  /* Đảm bảo dính sát mép viền box */
+}
+.custom-border-box {
+  border: 2px dashed #d61f1f;
+  border-radius: 18px;
+  padding: 24px 28px;
+  background: #fff;
+  font-size: 1.08rem;
+  color: #444;
+  line-height: 1.7;
+  box-shadow: 0 2px 12px 0 rgba(214, 31, 31, 0.04);
+  width: 100%;
+  margin: 36px 0;
+}
+/* Bullet custom cho ul */
+.custom-border-box ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.custom-border-box ul li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 6px;
+}
+.custom-border-box ul li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: #d61f1f;
+  font-size: 1.25em;
+  top: 0;
+}
+/* Responsive */
+@media (max-width: 575px) {
+  .custom-border-box {
+    padding: 16px 8px;
+    font-size: 0.96rem;
+  }
+  .red-dot {
+    width: 12px;
+    height: 12px;
+    min-width: 12px;
+    min-height: 12px;
+    margin-left: -7px;
+    margin-right: -7px;
+  }
+}
+
+.avatar-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 36px;
+  position: relative;
+}
+.avatar-profile__img {
+  width: 248px;
+  height: 248px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #fff;
+  border: 8px solid #d72134;
+  margin-bottom: 40px;
+  display: block;
+}
+.avatar-profile__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+.avatar-profile__name {
+  color: #f23d3d;
+  font-size: 1.14rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+.avatar-profile__role {
+  color: #333333;
+  font-style: italic;
+  margin-bottom: 0;
+  margin-top: 3px;
+  text-align: center;
+  font-family: Be Vietnam Pro;
+  font-weight: 400;
+  font-style: Italic;
+  font-size: 18px;
+}
+.avatar-profile__subtract {
+  position: absolute;
+  top: 124px;
+}
+.avatar-profile-small{
+  transform: scale(0.9);
+}
+
+.avatar-profile-large{
+  transform: scale(1.1);
+}
+@media (max-width: 575px) {
+  .avatar-profile__img {
+    width: 68px;
+    height: 68px;
+  }
+  .avatar-profile__name {
+    font-size: 0.96rem;
+  }
+  .avatar-profile__role {
+    font-size: 0.88rem;
+  }
 }

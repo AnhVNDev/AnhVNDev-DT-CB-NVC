@@ -26,21 +26,56 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container-fluid body-content">
       <!-- Banner -->
-      <div class="banner-main d-flex flex-lg-row flex-column">
-        <!-- Bên trái: Logo + Text -->
-        <div class="banner-info">
-          <img src="img/logo.png" class="banner-logo" />
-          <div class="banner-text ms-2">
-            <div>TỈNH ỦY QUẢNG NINH</div>
-            <div class="banner-title">TRƯỜNG ĐÀO TẠO CÁN BỘ NGUYỄN VĂN CỪ</div>
+      <div class="banner-main d-flex flex-lg-row flex-column position-relative">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-8">
+              <div class="banner-info">
+                <img src="img/logo.png" class="banner-logo" />
+                <div class="banner-text ms-2">
+                  <div>TỈNH ỦY QUẢNG NINH</div>
+                  <div class="banner-title">
+                    TRƯỜNG ĐÀO TẠO CÁN BỘ NGUYỄN VĂN CỪ
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4"></div>
+          </div>
+          <div class="container-fluid banner-img-carousel">
+            <div class="row p-0">
+              <div class="col-6 p-0"></div>
+              <div class="col-6 p-0">
+                <div id="owl-carousel-banner" class="owl-carousel">
+                  <div class="item">
+                    <img src="/img/more-1.jpg" alt="Banner 1" />
+                  </div>
+                  <div class="item">
+                    <img src="/img/more-2.jpg" alt="Banner 2" />
+                  </div>
+                  <div class="item">
+                    <img src="/img/more-3.jpg" alt="Banner 3" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <!-- Menu -->
       <nav class="main-navbar navbar navbar-expand-lg px-3">
         <div class="container-fluid">
           <button
@@ -216,12 +251,248 @@
           </div>
         </div>
       </div>
+      <!-- GENERAL INFORMATION -->
+      <section class="general-information-wrap">
+        <div class="container-fluid">
+          <div class="general-information-img">
+            <img src="/img/main-img.png" alt="" />
+          </div>
+        </div>
+        <div class="container-fluid center-wrap">
+          <div class="row w-80 position-relative">
+            <div class="col-md-6 col-12">
+              <div class="general-information-box">
+                <div class="general-information-title">Thông tin chung</div>
+                <ul class="general-information-list">
+                  <li>
+                    <span class="general-information-label">Tên trường:</span>
+                    Trường Đào tạo cán bộ Nguyễn Văn Cừ
+                  </li>
+                  <li>
+                    <span class="general-information-label"
+                      >Cơ quan chủ quản:</span
+                    >
+                    Tỉnh ủy Quảng Ninh
+                  </li>
+                  <li>
+                    <span class="general-information-label">Trụ sở chính:</span>
+                    Khu Cát Thành, phường Đông Mai, tỉnh Quảng Ninh
+                  </li>
+                  <li>
+                    <span class="general-information-label">Phân hiệu:</span>
+                    Khu Vườn Đào, phường Bãi Cháy, tỉnh Quảng Ninh
+                  </li>
+                  <li>
+                    <span class="general-information-label">Email:</span>
+                    dtcbnvc@quangninh.gov.vn
+                  </li>
+                  <li>
+                    <span class="general-information-label">Điện thoại:</span>
+                    0203 3838313
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="card-custom-img">
+                <div class="card-custom-img-inner">
+                  <img src="/img/info.jpg" alt="Award Ceremony" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid center-wrap">
+          <div class="row w-80 position-relative">
+            <div class="red-dot-flexbox">
+              <div class="red-dot"></div>
+              <div class="custom-border-box">
+                Trường Đào tạo cán bộ Nguyễn Văn Cừ được thành lập trên cơ sở
+                hợp nhất Trường Chính trị Nguyễn Văn Cừ, Trung tâm GDTX và Đào
+                tạo cán bộ tỉnh và Trường Huấn luyện cán bộ Đoàn, Đội,...<br />
+                Trong suốt quá trình thành và phát triển từ năm 1963 đến năm
+                2015. Do yêu cầu, nhiệm vụ của từng thời kỳ, Nhà trường đã nhiều
+                lần nhập, tách với các trường có cùng chức năng đào tạo, bồi
+                dưỡng cán bộ của tỉnh và thay đổi tên gọi cho phù hợp,...<br />
+                Kế tục và phát huy những truyền thống quý báu vốn có, bám sát sự
+                chỉ đạo, hướng dẫn của Học viện Chính trị quốc gia Hồ Chí Minh,
+                sự lãnh đạo, chỉ đạo của Tỉnh ủy, các thế hệ cán bộ, giảng viên,
+                nhân viên Nhà trường hôm nay không ngừng nỗ lực rèn luyện, tu
+                dưỡng về phẩm chất chính trị, đạo đức, lối sống, xây dựng văn
+                hóa trường đảng.
+                <ul class="mt-3 mb-0">
+                  <li>
+                    Trong công tác đào tạo, bồi dưỡng: Nhà trường đã tham mưu
+                    cho tỉnh và phối hợp với các ban, sở, ngành, địa phương, đơn
+                    vị tổ chức hơn 1.000 lớp đào tạo, bồi dưỡng trong và ngoài
+                    nước.
+                  </li>
+                  <li>
+                    Nhà trường đã đẩy mạnh đổi mới phương pháp giảng dạy và nâng
+                    cao chất lượng xây dựng nội dung, chương trình. Đội ngũ
+                    giảng viên đã từng bước trưởng thành về năng lực và kinh
+                    nghiệm giảng dạy, trình độ. Thông qua các hội thi giảng viên
+                    dạy giỏi toàn quốc, báo cáo viên giỏi, nhà trường đều có
+                    giảng viên đạt xuất sắc các hội thi.
+                  </li>
+                  <li>
+                    Công tác nghiên cứu khoa học và tổng kết thực tiễn đã đạt
+                    được những kết quả tích cực. Mỗi năm bình quân tổ chức trên
+                    5 hội thảo khoa học cấp tỉnh, 1-2 đề tài khoa học cấp tỉnh
+                    và nhiều đề tài cấp cơ sở.
+                  </li>
+                </ul>
+              </div>
+              <div class="red-dot"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-fluid w-80">
+          <div class="row">
+            <div class="col-12">
+              <div class="avatar-profile">
+                <div class="avatar-profile__img">
+                  <img
+                    src="img/cd.png"
+                    alt="ThS. Phạm Thùy Dương"
+                  />
+                </div>
+                <div class="avatar-profile__subtract">
+                  <img
+                    src="img/subtract.png"
+                    alt="ThS. Phạm Thùy Dương"
+                  />
+                </div>
+                <div class="avatar-profile__name">THS. PHẠM THÙY DƯƠNG</div>
+                <div class="avatar-profile__role">Bí thư</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <div class="avatar-profile">
+                <div class="avatar-profile__img">
+                  <img
+                    src="img/cd.png"
+                    alt="ThS. Phạm Thùy Dương"
+                  />
+                </div>
+                <div class="avatar-profile__subtract">
+                  <img
+                    src="img/subtract.png"
+                    alt="ThS. Phạm Thùy Dương"
+                  />
+                </div>
+                <div class="avatar-profile__name">THS. PHẠM THÙY DƯƠNG</div>
+                <div class="avatar-profile__role">Hiệu trưởng</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="avatar-profile">
+                <div class="avatar-profile__img">
+                  <img
+                    src="img/cd.png"
+                    alt="ThS. Phạm Thùy Dương"
+                  />
+                </div>
+                <div class="avatar-profile__subtract">
+                  <img
+                    src="img/subtract.png"
+                    alt="ThS. Phạm Thùy Dương"
+                  />
+                </div>
+                <div class="avatar-profile__name">THS. PHẠM THÙY DƯƠNG</div>
+                <div class="avatar-profile__role">Hiệu trưởng</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="avatar-profile">
+                <div class="avatar-profile__img">
+                  <img
+                    src="img/logo.png"
+                    alt="ThS. Phạm Thùy Dương"
+                  />
+                </div>
+                <div class="avatar-profile__subtract">
+                  <img
+                    src="img/subtract.png"
+                    alt="ThS. Phạm Thùy Dương"
+                  />
+                </div>
+                <div class="avatar-profile__name">THS. PHẠM THÙY DƯƠNG</div>
+                <div class="avatar-profile__role">Hiệu trưởng</div>
+              </div>
+            </div>
+          </div>
+           <div class="row">
+            <div class="col-4">
+              <div class="avatar-profile avatar-profile-small">
+                <div class="avatar-profile__img">
+                  <img
+                    src="img/cd.png"
+                    alt="ThS. Phạm Thùy Dương"
+                  />
+                </div>
+                <div class="avatar-profile__subtract">
+                  <img
+                    src="img/subtract.png"
+                    alt="ThS. Phạm Thùy Dương"
+                  />
+                </div>
+                <div class="avatar-profile__name">THS. PHẠM THÙY DƯƠNG</div>
+                <div class="avatar-profile__role">Hiệu trưởng</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="avatar-profile">
+                <div class="avatar-profile__img avatar-profile-small">
+                  <img
+                    src="img/cd.png"
+                    alt="ThS. Phạm Thùy Dương"
+                  />
+                </div>
+                <div class="avatar-profile__subtract">
+                  <img
+                    src="img/subtract.png"
+                    alt="ThS. Phạm Thùy Dương"
+                  />
+                </div>
+                <div class="avatar-profile__name">THS. PHẠM THÙY DƯƠNG</div>
+                <div class="avatar-profile__role">Hiệu trưởng</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="avatar-profile">
+                <div class="avatar-profile__img avatar-profile-small">
+                  <img
+                    src="img/logo.png"
+                    alt="ThS. Phạm Thùy Dương"
+                  />
+                </div>
+                <div class="avatar-profile__subtract">
+                  <img
+                    src="img/subtract.png"
+                    alt="ThS. Phạm Thùy Dương"
+                  />
+                </div>
+                <div class="avatar-profile__name">THS. PHẠM THÙY DƯƠNG</div>
+                <div class="avatar-profile__role">Hiệu trưởng</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       async
     ></script>
-    <script src="javacsript.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="javascript.js" defer></script>
   </body>
 </html>
