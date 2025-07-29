@@ -38,6 +38,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -254,7 +255,7 @@
         </div>
       </div>
       <!-- GENERAL INFORMATION -->
-      <section class="general-information-wrap">
+      <section class="general-information-wrap" data-aos="fade-up">
         <div class="container-fluid">
           <div class="general-information-img">
             <img src="/img/main-img.png" alt="" />
@@ -351,7 +352,7 @@
         </div>
       </section>
       <!-- Đảng ỦY -->
-      <section class="school-leader-wrap position-relative">
+      <section class="school-leader-wrap position-relative" data-aos="fade-up">
         <div class="position-absolute school-leader-title">
           <div class="banner-wrapper">
             <div class="banner-hexagon"></div>
@@ -459,7 +460,7 @@
         </div>
       </section>
       <!-- LÃNH ĐẠO NHÀ TRƯỜNG -->
-      <section class="school-leader-member-wrap position-relative">
+      <section class="school-leader-member-wrap position-relative" data-aos="fade-up">
         <div class="position-absolute school-leader-title">
           <div class="banner-wrapper">
             <div class="banner-hexagon"></div>
@@ -520,7 +521,7 @@
       </section>
 
       <!-- BAN CHẤP HÀNH CÔNG ĐOÀN -->
-      <section class="school-leader-team-wrap position-relative">
+      <section class="school-leader-team-wrap position-relative" data-aos="fade-up">
         <div class="position-absolute school-leader-title">
           <div class="banner-wrapper">
             <div class="banner-hexagon"></div>
@@ -614,7 +615,7 @@
       </section>
 
       <!-- BAN CHẤP HÀNH ĐOÀN THANH NIÊN -->
-      <section class="school-leader-young-wrap position-relative">
+      <section class="school-leader-young-wrap position-relative" data-aos="fade-up">
         <div class="position-absolute school-leader-title">
           <div class="banner-wrapper">
             <div class="banner-hexagon"></div>
@@ -662,7 +663,7 @@
         </div>
       </section>
 
-      <section class="position-relative">
+      <section class="position-relative" data-aos="fade-up">
         <div class="position-absolute title-wrap">
           <div class="banner-wrapper">
             <div class="banner-hexagon"></div>
@@ -706,7 +707,7 @@
         </div>
       </section>
 
-      <section class="position-relative">
+      <section class="position-relative" data-aos="fade-up">
         <div class="position-absolute title-wrap">
           <div class="banner-wrapper">
             <div class="banner-hexagon"></div>
@@ -772,7 +773,7 @@
           </div>
         </div>
       </section>
-      <section class="position-relative">
+      <section class="position-relative" data-aos="zoom-in">
         <div class="position-absolute title-wrap">
           <div class="banner-wrapper">
             <div class="banner-hexagon"></div>
@@ -828,7 +829,7 @@
         </div>
       </section>
 
-      <div class="footer">
+      <div class="footer" data-aos="fade-up">
         <div class="footer-left">
           <h3>TRƯỜNG ĐÀO TẠO CÁN BỘ NGUYỄN VĂN CỪ</h3>
           <p>
@@ -879,6 +880,13 @@
     <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // thời gian hiệu ứng (ms)
+        once: true, // chỉ chạy 1 lần
+      });
+    </script>
     <script src="javascript.js" defer></script>
   </body>
 </html>
