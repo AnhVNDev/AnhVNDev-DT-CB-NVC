@@ -82,7 +82,6 @@ body {
 @media (max-width: 991px) {
   .banner-main {
     flex-direction: column;
-    padding: 10px 0;
     min-height: unset;
   }
   .banner-school-img {
@@ -287,7 +286,7 @@ body {
 }
 .general-information-title {
   font-weight: bold;
-  color: #D72134;
+  color: #d72134;
   font-size: 20px;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
@@ -344,7 +343,6 @@ body {
 }
 .card-custom-img-inner {
   width: 100%;
-  height: 100%;
   border-radius: 48px 0 48px 48px; /* nhỏ hơn card ngoài để lộ padding */
   overflow: hidden;
   height: 100%;
@@ -526,13 +524,13 @@ body {
 .banner-hexagon {
   width: 30px;
   height: 28px;
-  background-color: #D72134;
+  background-color: #d72134;
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
 .banner-line {
   height: 4px;
-  background-color: #D72134;
+  background-color: #d72134;
   flex: 1;
   max-width: 30px;
   width: 30px;
@@ -540,7 +538,7 @@ body {
 
 .banner-section {
   display: inline-block;
-  background-color: #D72134;
+  background-color: #d72134;
   padding: 10px 60px;
   clip-path: polygon(
     25px 0%,
@@ -589,7 +587,7 @@ body {
 }
 
 .footer {
-  background-color: #F5F6FC;
+  background-color: #f5f6fc;
   padding: 40px 20px 0;
   display: flex;
   flex-wrap: wrap;
@@ -604,19 +602,19 @@ body {
 }
 
 .footer-right {
-  border: 1px solid #D72134;
+  border: 1px solid #d72134;
   padding: 10px 20px;
   border-radius: 4px;
-  color: #D72134;
+  color: #d72134;
 }
 
 .footer-icon {
   margin-right: 8px;
-  color: #D72134;
+  color: #d72134;
 }
 
 .copyright {
-  background-color: #D72134;
+  background-color: #d72134;
   color: white;
   text-align: center;
   padding: 10px;
@@ -730,7 +728,7 @@ body {
 }
 
 .custom-box {
-  background: #F5F6FC;
+  background: #f5f6fc;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px 25px;
@@ -863,11 +861,64 @@ body {
   }
 }
 
+.header-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 1055;
+  background-color: white;
+}
 
+.grid-leader {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grid-full {
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-4 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 @media (max-width: 1024px) {
+  .w-80 {
+    width: 90%;
+  }
+  .card-custom-img {
+    width: auto;
+    height: auto;
+    position: unset;
+  }
+  .member-img{
+    height: 25vh;
+  }
+  .custom-box {
+    width: 90%;
+    position: unset;
+    transform: none;
+    margin-bottom: 120px;
+  }
 
+  .training-section {
+    width: 90%;
+  }
 }
 
 @media (max-width: 600px) {
-
+  .avatar-profile__subtract {
+    display: none;
+  }
+  .training-section img{
+    height: auto;
+  }
 }
