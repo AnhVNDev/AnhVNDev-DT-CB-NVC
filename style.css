@@ -42,12 +42,19 @@ body {
 }
 .banner-info {
   min-width: 230px;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-shrink: 0;
   padding: 0.5rem 2rem;
-  background: url("/img/banner-mark.png");
+  background-image: url("/img/banner-mark.png");
   height: 168px;
+  background-repeat: no-repeat;
+  background-size: 130% 100%;
+}
+
+.banner-info-title{
+  width: 80%;
 }
 .banner-logo {
   max-width: 90px;
@@ -375,8 +382,10 @@ body {
 }
 
 .banner-img-carousel {
+  width: 50%;
   position: absolute;
   top: 0;
+  right: 0;
   z-index: -1;
 }
 
@@ -899,7 +908,7 @@ body {
     height: auto;
     position: unset;
   }
-  .member-img{
+  .member-img {
     height: 25vh;
   }
   .custom-box {
@@ -918,7 +927,7 @@ body {
   .avatar-profile__subtract {
     display: none;
   }
-  .training-section img{
+  .training-section img {
     height: auto;
   }
 }
