@@ -42,12 +42,19 @@ body {
 }
 .banner-info {
   min-width: 230px;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-shrink: 0;
   padding: 0.5rem 2rem;
-  background: url("/img/banner-mark.png");
+  background-image: url("/img/banner-mark.png");
   height: 168px;
+  background-repeat: no-repeat;
+  background-size: 130% 100%;
+}
+
+.banner-info-title{
+  width: 80%;
 }
 .banner-logo {
   max-width: 90px;
@@ -82,7 +89,6 @@ body {
 @media (max-width: 991px) {
   .banner-main {
     flex-direction: column;
-    padding: 10px 0;
     min-height: unset;
   }
   .banner-school-img {
@@ -287,8 +293,8 @@ body {
 }
 .general-information-title {
   font-weight: bold;
-  color: #d51c24;
-  font-size: 1.1rem;
+  color: #d72134;
+  font-size: 20px;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
 }
@@ -300,6 +306,7 @@ body {
 .general-information-list li {
   margin-bottom: 0.25rem;
   font-size: 1rem;
+  color: #333333;
 }
 .general-information-label {
   font-weight: bold;
@@ -343,7 +350,6 @@ body {
 }
 .card-custom-img-inner {
   width: 100%;
-  height: 100%;
   border-radius: 48px 0 48px 48px; /* nhỏ hơn card ngoài để lộ padding */
   overflow: hidden;
   height: 100%;
@@ -376,8 +382,10 @@ body {
 }
 
 .banner-img-carousel {
+  width: 50%;
   position: absolute;
   top: 0;
+  right: 0;
   z-index: -1;
 }
 
@@ -406,8 +414,8 @@ body {
   border-radius: 18px;
   padding: 24px 28px;
   background: #fff;
-  font-size: 1.08rem;
-  color: #444;
+  font-size: 1rem;
+  color: #333333;
   line-height: 1.7;
   box-shadow: 0 2px 12px 0 rgba(214, 31, 31, 0.04);
   width: 100%;
@@ -488,9 +496,7 @@ body {
   margin-bottom: 0;
   margin-top: 3px;
   text-align: center;
-  font-family: Be Vietnam Pro;
   font-weight: 400;
-  font-style: Italic;
   font-size: 18px;
 }
 .avatar-profile__subtract {
@@ -527,13 +533,13 @@ body {
 .banner-hexagon {
   width: 30px;
   height: 28px;
-  background-color: #c8102e;
+  background-color: #d72134;
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
 .banner-line {
   height: 4px;
-  background-color: #c8102e;
+  background-color: #d72134;
   flex: 1;
   max-width: 30px;
   width: 30px;
@@ -541,7 +547,7 @@ body {
 
 .banner-section {
   display: inline-block;
-  background-color: #c8102e;
+  background-color: #d72134;
   padding: 10px 60px;
   clip-path: polygon(
     25px 0%,
@@ -590,13 +596,13 @@ body {
 }
 
 .footer {
-  background-color: #f7f8fc;
+  background-color: #f5f6fc;
   padding: 40px 20px 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: flex-start;
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
 }
 
@@ -605,24 +611,23 @@ body {
 }
 
 .footer-right {
-  border: 1px solid #c8102e;
+  border: 1px solid #d72134;
   padding: 10px 20px;
   border-radius: 4px;
-  color: #c8102e;
+  color: #d72134;
 }
 
 .footer-icon {
   margin-right: 8px;
-  color: #c8102e;
+  color: #d72134;
 }
 
 .copyright {
-  background-color: #c8102e;
+  background-color: #d72134;
   color: white;
   text-align: center;
   padding: 10px;
-  margin-top: 30px;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .gallery-grid {
@@ -732,14 +737,15 @@ body {
 }
 
 .custom-box {
-  background: white;
+  background: #f5f6fc;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px 25px;
   width: 70%;
   margin: 0 auto;
-  color: #2f2f2f;
-  font-size: 15px;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 400;
   line-height: 1.6;
   position: absolute;
   top: -90px;
@@ -749,7 +755,7 @@ body {
 
 .custom-box-wrap {
   position: relative;
-  min-height: 300px;
+  min-height: 400px;
 }
 
 .training-section {
@@ -773,12 +779,14 @@ body {
   width: 50%;
   border-radius: 10px;
   object-fit: cover;
+  height: 600px;
 }
 
 .training-content {
   width: 50%;
-  font-size: 16px;
-  color: #1f2937;
+  font-size: 24px;
+  color: #333333;
+  font-weight: 400;
 }
 
 .training-content p {
@@ -827,7 +835,7 @@ body {
 .timeline-dot {
   position: absolute;
   left: 0;
-  top: 7px;
+  top: 12px;
   width: 14px;
   height: 14px;
   background: #fff;
@@ -848,11 +856,10 @@ body {
   display: block;
 }
 .vertical-timeline li .item-content {
-  font-size: 1.11rem;
+  font-size: 24px;
   color: #232323;
   font-weight: 500;
   line-height: 1.5;
-  font-family: inherit;
 }
 @media (max-width: 440px) {
   .vertical-timeline {
@@ -860,5 +867,67 @@ body {
   }
   .vertical-timeline li .item-content {
     font-size: 1rem;
+  }
+}
+
+.header-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 1055;
+  background-color: white;
+}
+
+.grid-leader {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grid-full {
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-4 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+@media (max-width: 1024px) {
+  .w-80 {
+    width: 90%;
+  }
+  .card-custom-img {
+    width: auto;
+    height: auto;
+    position: unset;
+  }
+  .member-img {
+    height: 25vh;
+  }
+  .custom-box {
+    width: 90%;
+    position: unset;
+    transform: none;
+    margin-bottom: 120px;
+  }
+
+  .training-section {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .avatar-profile__subtract {
+    display: none;
+  }
+  .training-section img {
+    height: auto;
   }
 }
