@@ -47,14 +47,17 @@ body {
   align-items: center;
   flex-shrink: 0;
   padding: 0.5rem 2rem;
-  background-image: url("/img/banner-mark.png");
+  background-image: url("/img/cau-bai-chay-quang-ninh.jpg");
   height: 168px;
   background-repeat: no-repeat;
-  background-size: 130% 100%;
+  background-size: cover;
+  background-position: center;
+  mask-image: linear-gradient(to right, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 90%, transparent 100%);
 }
 
-.banner-info-title{
-  width: 80%;
+.banner-info-title {
+  width: 78%;
 }
 .banner-logo {
   max-width: 90px;
@@ -382,7 +385,7 @@ body {
 }
 
 .banner-img-carousel {
-  width: 50%;
+  width: 35%;
   position: absolute;
   top: 0;
   right: 0;
