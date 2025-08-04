@@ -8,6 +8,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: 'UTM HelvetIns';
+  src: url('/fonts/UTM-HelvetIns.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body::-webkit-scrollbar {
   width: 7px;
   background: transparent;
@@ -47,17 +54,14 @@ body {
   align-items: center;
   flex-shrink: 0;
   padding: 0.5rem 2rem;
-  background-image: url("/img/cau-bai-chay-quang-ninh.jpg");
+  background-image: url("/img/banner-mark.png");
   height: 168px;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  mask-image: linear-gradient(to right, black 90%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, black 90%, transparent 100%);
+  background-size: 140% 100%;
 }
 
 .banner-info-title {
-  width: 78%;
+  width: 90%;
 }
 .banner-logo {
   max-width: 124px;
@@ -69,14 +73,20 @@ body {
 }
 .banner-text {
   color: #fff;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 30px;
   line-height: 1.2;
   letter-spacing: 0.5px;
   text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.12);
+  font-family: 'UTM HelvetIns', sans-serif;
 }
 .banner-title {
-  font-size: 30px;
+  font-size: 33px;
+  flex: 1;
+  white-space: normal;
+  word-break: break-word;
+  font-weight: 400;
+  font-family: 'UTM HelvetIns', sans-serif;
 }
 .banner-school-img {
   border-top-right-radius: 4px;
@@ -385,7 +395,7 @@ body {
 }
 
 .banner-img-carousel {
-  width: 35%;
+  width: 30%;
   position: absolute;
   top: 0;
   right: 0;
