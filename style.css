@@ -1114,8 +1114,7 @@ body {
 }
 
 .leader-department-profile-card {
-  width: 300px;
-  max-width: 100%;
+  max-width: 343px;
   background: white;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -1129,17 +1128,15 @@ body {
 }
 
 .leader-department-profile-card .leader-department-profile-card-avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  max-height: 218px;
   object-fit: cover;
   margin-bottom: 15px;
 }
 
 .leader-department-profile-card-info .leader-department-profile-card-name {
-  color: #d90000;
-  font-size: 18px;
-  font-weight: bold;
+  color: #D72134;
+  font-size: 20px;
+  font-weight: 700;
   margin: 0 0 5px;
   text-transform: uppercase;
 }
@@ -1147,18 +1144,24 @@ body {
 .leader-department-profile-card-info .leader-department-profile-card-position {
   color: #333;
   margin: 0 0 15px;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .leader-department-profile-card-info p {
   margin: 6px 0;
-  font-size: 14px;
-  color: #555;
+  font-size: 16px;
+  color: #333333;
+  font-weight: 400;
 }
 
+.leader-department-profile-card-phone{
+  font-style: italic;
+}
 .leader-department-profile-card-info a {
-  color: #007bff;
   text-decoration: none;
+  font-style: italic;
+  color: #333333;
 }
 
 .leader-department-profile-card-info a:hover {
@@ -1172,18 +1175,18 @@ body {
 }
 
 .info-border {
-  border-radius: 48px;
+  border-radius: 60px;
   padding: 16px 16px 0px 16px;
   box-shadow: 0 0 0 6px #fba8a8;
 }
 
 .info-content {
-  background-color: #fef7f7;
-  border-radius: 32px;
+  background-color: #FEF2F2;
+  border-radius: 60px;
   padding: 60px;
-  font-size: 18px;
-  line-height: 1.8;
-  color: #1a1a1a;
+  font-weight: 500;
+  font-size: 25px;
+  color: #333333;
   transform: translateY(-32px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
@@ -1210,7 +1213,7 @@ body {
   gap: 16px;
 }
 
-.mision-item{
+.mision-item {
   display: flex;
   gap: 12px;
 }
@@ -1218,7 +1221,7 @@ details.collapse {
   border: 1px solid #ddd;
   border-radius: 50px;
   padding: 16px 20px;
-  background: #FEABB4;
+  background: #feabb4;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   position: relative;
   overflow: hidden;
@@ -1278,28 +1281,27 @@ details[open] .collapse-content {
   margin-top: 12px;
 }
 
-.collapse-content  {
+.collapse-content {
   font-weight: 400;
   font-size: 25px;
 }
 
 .number-outline {
-  font-size: 60px;
+  font-size: 72px;
   font-weight: bold;
-  font-family: Arial, sans-serif;
   color: white; /* Màu nền chữ */
   -webkit-text-stroke: 2px #f66; /* Viền màu hồng */
   display: inline-block;
 }
 
-.collapse-overlay{
+.collapse-overlay {
   padding-top: 6px;
   border-radius: 50px;
-  border-top: 3px solid #FEABB4;
-  
+  border-top: 3px solid #feabb4;
+  width: 100%;
 }
 
-.department-img-content{
+.department-img-content {
   margin-top: 80px;
   padding-bottom: 80px;
   width: 80%;
@@ -1322,6 +1324,23 @@ details[open] .collapse-content {
   object-position: center;
   display: block;
   border-radius: 0;
+}
+
+.header-gradient {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  padding: 8px 20px;
+  font-weight: 700;
+  font-size: 30px;
+  color: #D72134; /* đỏ chữ */
+  background: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0.25) 0%,
+    /* bắt đầu hồng */ rgba(255, 0, 0, 0.25) 50%,
+    /* giữ hồng tới 60% chiều ngang */ rgba(255, 255, 255, 0) 100%
+      /* sau đó mới mờ dần */
+  );
 }
 @media (max-width: 1024px) {
   .w-80 {
@@ -1372,6 +1391,9 @@ details[open] .collapse-content {
 
 @media (max-width: 600px) {
   .avatar-profile__subtract {
+    display: none;
+  }
+  .number-outline{
     display: none;
   }
 }
