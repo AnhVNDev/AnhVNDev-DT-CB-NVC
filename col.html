@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Collapse thuần CSS</title>
+  <style>
+    .collapse-container {
+      max-width: 600px;
+      margin: 20px auto;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    details.collapse {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 16px 20px;
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      position: relative;
+    }
+
+    details[open] {
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    details summary {
+      font-weight: 600;
+      color: #333;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Xóa dấu tam giác mặc định của <summary> */
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .arrow {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: #f1455b;
+      color: #fff;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      font-size: 14px;
+      transition: transform 0.3s ease;
+    }
+
+    details[open] .arrow {
+      transform: rotate(180deg);
+    }
+
+    .collapse-content {
+      margin-top: 12px;
+      font-size: 15px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .collapse-content p {
+      margin: 0 0 8px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="collapse-container">
+    <details class="collapse">
+      <summary>
+        <span>
+          Tham mưu về công tác đào tạo, bồi dưỡng; tổ chức thực hiện các lớp theo kế hoạch tỉnh giao, gồm các công việc:
+        </span>
+        <span class="arrow">⌃</span>
+      </summary>
+      <div class="collapse-content">
+        <p>– Xây dựng, trình xin ý kiến Hội đồng điều hành công tác đào tạo, bồi dưỡng của tỉnh...</p>
+        <p>– Khảo sát, tổ chức chiêu sinh, mở các lớp đào tạo, bồi dưỡng, tập huấn cán bộ, công chức...</p>
+      </div>
+    </details>
+  </div>
+
+</body>
+</html>

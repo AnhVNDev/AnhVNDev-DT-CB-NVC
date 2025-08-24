@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trường đào tạo cán bộ Nguyễn Văn Cừ</title>
+    <link rel="icon" type="image/png" href="/img/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid body-content">
+      <!-- Banner -->
+      <div class="banner-main d-flex flex-lg-row flex-column position-relative">
+        <div class="container-fluid">
+          <div class="banner-info-title">
+            <div class="banner-info">
+              <img src="img/logo.png" class="banner-logo" />
+              <div class="banner-top-text ms-2">
+                <div>TỈNH ỦY QUẢNG NINH</div>
+                <div class="banner-title">
+                  TRƯỜNG ĐÀO TẠO CÁN BỘ NGUYỄN VĂN CỪ
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="banner-img-carousel">
+            <div class="banner-left">
+              <div class="banner-img-bg"></div>
+              <div class="owl-banner-carousel">
+                <div id="owl-carousel-banner" class="owl-carousel">
+                  <div class="item">
+                    <img src="/img/more-1.jpg" alt="Banner 1" />
+                  </div>
+                  <div class="item">
+                    <img src="/img/more-2.jpg" alt="Banner 2" />
+                  </div>
+                  <div class="item">
+                    <img src="/img/more-3.jpg" alt="Banner 3" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-wrap">
+        <!-- Menu -->
+        <nav class="main-navbar navbar navbar-expand-lg px-3">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#menuModal"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tuyển sinh</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  >Đào tạo - Bồi dưỡng</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Chương trình A</a></li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#"
+                      >Chuyên đề nâng cao</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Chuyên đề 1</a></li>
+                      <li><a class="dropdown-item" href="#">Chuyên đề 2</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Khóa học ngắn hạn</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nghiên cứu khoa học</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Văn bản hướng dẫn</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+              <li class="nav-item">
+                <div class="dropdown lang-dropdown d-none d-lg-block ms-2">
+                  <button
+                    class="lang-btn dropdown-toggle"
+                    type="button"
+                    id="langDropdown"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div
+                      class="d-flex flex-row align-items-center justify-content-center"
+                    >
+                      <span class="lang-icon">🌐</span>
+                      <span class="lang-text">Ngôn ngữ</span>
+                    </div>
+                  </button>
+                  <ul
+                    class="dropdown-menu text-center"
+                    aria-labelledby="langDropdown"
+                  >
+                    <li><a class="dropdown-item" href="#">Tiếng Việt</a></li>
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#">中文</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Modal menu mobile -->
+        <div class="modal fade" id="menuModal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Menu</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <ul class="navbar-nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Trang chủ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Giới thiệu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Tuyển sinh</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#dao-tao-mobile"
+                      >Đào tạo - Bồi dưỡng</a
+                    >
+                    <ul class="collapse" id="dao-tao-mobile">
+                      <li>
+                        <a class="dropdown-item" href="#">Chương trình A</a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#chuyende-mobile"
+                          href="#"
+                          >Chuyên đề nâng cao</a
+                        >
+                        <ul class="collapse" id="chuyende-mobile">
+                          <li>
+                            <a class="dropdown-item" href="#">Chuyên đề 1</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Chuyên đề 2</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Khóa học ngắn hạn</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Nghiên cứu khoa học</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Văn bản hướng dẫn</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Liên hệ</a>
+                  </li>
+                  <!-- Dropdown Ngôn ngữ Mobile -->
+                  <li class="nav-item mt-2">
+                    <div class="dropdown lang-dropdown w-100">
+                      <button
+                        class="lang-btn dropdown-toggle w-100"
+                        type="button"
+                        id="langDropdownMobile"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <div
+                          class="d-flex flex-row align-items-center justify-content-center"
+                        >
+                          <span class="lang-icon">🌐</span>
+                          <span class="lang-text">Ngôn ngữ</span>
+                        </div>
+                      </button>
+                      <ul
+                        class="dropdown-menu w-100 text-center"
+                        aria-labelledby="langDropdownMobile"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#">Tiếng Việt</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">中文</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section
+        class="position-relative leader-department-wrap"
+        data-aos="fade-up"
+      >
+        <div class="position-absolute title-wrap">
+          <div class="banner-wrapper">
+            <div class="banner-hexagon"></div>
+            <div class="banner-line"></div>
+            <div class="banner-section">
+              <span class="banner-text">LÃNH ĐẠO PHÒNG</span>
+            </div>
+            <div class="banner-line"></div>
+            <div class="banner-hexagon"></div>
+          </div>
+        </div>
+        <div class="container-fluid leader-department-content">
+          <div class="leader-department-row">
+            <div class="leader-department-profile-card">
+              <img
+                class="leader-department-profile-card-avatar"
+                src="./img/ld-1.png"
+                alt="Nguyễn Thị Hải Ninh"
+              />
+              <div class="leader-department-profile-card-info">
+                <h3 class="leader-department-profile-card-name">
+                  ThS. NGUYỄN THỊ HẢI NINH
+                </h3>
+                <p class="leader-department-profile-card-position">
+                  Phó trưởng khoa
+                </p>
+                <p>
+                  <strong>Điện thoại di động:</strong>
+                  <span class="leader-department-profile-card-phone"
+                    >0912.988.608</span
+                  >
+                </p>
+                <p>
+                  <strong>Email:</strong>
+                  <a href="mailto:buiduclv@quangninh.gov.vn"
+                    >buiduclv@quangninh.gov.vn</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="leader-department-profile-card">
+              <img
+                class="leader-department-profile-card-avatar"
+                src="./img/ld-2.png"
+                alt="Nguyễn Thị Hải Ninh"
+              />
+              <div class="leader-department-profile-card-info">
+                <h3 class="leader-department-profile-card-name">
+                  ThS. NGUYỄN THỊ HẢI NINH
+                </h3>
+                <p class="leader-department-profile-card-position">
+                  Phó trưởng khoa
+                </p>
+                <p>
+                  <strong>Điện thoại di động:</strong>
+                  <span class="leader-department-profile-card-phone"
+                    >0912.988.608</span
+                  >
+                </p>
+                <p>
+                  <strong>Email:</strong>
+                  <a href="mailto:buiduclv@quangninh.gov.vn"
+                    >buiduclv@quangninh.gov.vn</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="position-relative info-department-wrap"
+        data-aos="fade-up"
+      >
+        <div class="position-absolute title-wrap">
+          <div class="banner-wrapper">
+            <div class="banner-hexagon"></div>
+            <div class="banner-line"></div>
+            <div class="banner-section">
+              <span class="banner-text">CHỨC NĂNG</span>
+            </div>
+            <div class="banner-line"></div>
+            <div class="banner-hexagon"></div>
+          </div>
+        </div>
+        <div class="container-fluid info-department-content">
+          <div class="info-border">
+            <div class="info-content">
+              Tham mưu cho lãnh đạo Trường trong việc xây dựng kế hoạch, tổ chức
+              triển khai các lớp đào tạo, bồi dưỡng cán bộ, công chức, viên chức
+              trong và ngoài nước được tỉnh giao và các lớp theo nhiệm vụ của
+              trường chính trị cấp tỉnh. Thực hiện công tác quản lý đào tạo, bồi
+              dưỡng theo quy chế, quy định; quản lý, triển khai hoạt động nghiên
+              cứu khoa học; phối hợp tham mưu xây dựng đội ngũ giảng viên kiêm
+              nhiệm, giảng viên kiêm chức và theo dõi thực hiện nhiệm vụ của
+              giảng viên theo quy định.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="position-relative mission-wrap" data-aos="fade-up">
+        <div class="position-absolute title-wrap">
+          <div class="banner-wrapper">
+            <div class="banner-hexagon"></div>
+            <div class="banner-line"></div>
+            <div class="banner-section">
+              <span class="banner-text">NHIỆM VỤ</span>
+            </div>
+            <div class="banner-line"></div>
+            <div class="banner-hexagon"></div>
+          </div>
+        </div>
+        <div class="container-fluid mission-content">
+          <ul class="mission-list">
+            <li>
+              <div class="mision-item">
+                <div class="mision-num">
+                  <div class="number-outline">01</div>
+                </div>
+                <div class="collapse-overlay">
+                  <details class="collapse show">
+                    <summary class="collapse-preview">
+                      <span
+                        >Tham mưu về công tác đào tạo, bồi dưỡng; tổ chức thực
+                        hiện các lớp theo kế hoạch tỉnh giao, gồm các công
+                        việc:</span
+                      >
+                      <img src="/img/arrow-btn.png" class="arrow" alt="" />
+                    </summary>
+                    <div class="collapse-content">
+                      <p>
+                        – Xây dựng, trình xin ý kiến Hội đồng điều hành công tác
+                        đào tạo, bồi dưỡng của tỉnh kế hoạch đào tạo, bồi dưỡng
+                        hằng năm; phối hợp với Ban Tổ chức Tỉnh ủy, Sở Nội vụ và
+                        các cơ quan liên quan triển khai tổ chức các lớp đào
+                        tạo, bồi dưỡng Tỉnh giao.
+                      </p>
+                      <p>
+                        – Khảo sát, tổ chức chiêu sinh, mở các lớp đào tạo, bồi
+                        dưỡng, tập huấn cán bộ, công chức, viên chức theo nhu
+                        cầu đào tạo, bồi dưỡng cán bộ của các địa phương
+                      </p>
+                    </div>
+                  </details>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="mision-item">
+                <div class="mision-num">
+                  <div class="number-outline">02</div>
+                </div>
+                <div class="collapse-overlay">
+                  <details class="collapse show">
+                    <summary class="collapse-preview">
+                      <span
+                        >Tham mưu về công tác đào tạo, bồi dưỡng; tổ chức thực
+                        hiện các lớp theo kế hoạch tỉnh giao, gồm các công
+                        việc:</span
+                      >
+                      <img src="/img/arrow-btn.png" class="arrow" alt="" />
+                    </summary>
+                    <div class="collapse-content">
+                      <p>
+                        – Xây dựng, trình xin ý kiến Hội đồng điều hành công tác
+                        đào tạo, bồi dưỡng của tỉnh kế hoạch đào tạo, bồi dưỡng
+                        hằng năm; phối hợp với Ban Tổ chức Tỉnh ủy, Sở Nội vụ và
+                        các cơ quan liên quan triển khai tổ chức các lớp đào
+                        tạo, bồi dưỡng Tỉnh giao.
+                      </p>
+                      <p>
+                        – Khảo sát, tổ chức chiêu sinh, mở các lớp đào tạo, bồi
+                        dưỡng, tập huấn cán bộ, công chức, viên chức theo nhu
+                        cầu đào tạo, bồi dưỡng cán bộ của các địa phương
+                      </p>
+                    </div>
+                  </details>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="mision-item">
+                <div class="mision-num">
+                  <div class="number-outline">03</div>
+                </div>
+                <div class="collapse-overlay">
+                  <details class="collapse show">
+                    <summary class="collapse-preview">
+                      <span
+                        >Tham mưu về công tác đào tạo, bồi dưỡng; tổ chức thực
+                        hiện các lớp theo kế hoạch tỉnh giao, gồm các công
+                        việc:</span
+                      >
+                      <img src="/img/arrow-btn.png" class="arrow" alt="" />
+                    </summary>
+                    <div class="collapse-content">
+                      <p>
+                        – Xây dựng, trình xin ý kiến Hội đồng điều hành công tác
+                        đào tạo, bồi dưỡng của tỉnh kế hoạch đào tạo, bồi dưỡng
+                        hằng năm; phối hợp với Ban Tổ chức Tỉnh ủy, Sở Nội vụ và
+                        các cơ quan liên quan triển khai tổ chức các lớp đào
+                        tạo, bồi dưỡng Tỉnh giao.
+                      </p>
+                      <p>
+                        – Khảo sát, tổ chức chiêu sinh, mở các lớp đào tạo, bồi
+                        dưỡng, tập huấn cán bộ, công chức, viên chức theo nhu
+                        cầu đào tạo, bồi dưỡng cán bộ của các địa phương
+                      </p>
+                    </div>
+                  </details>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="mision-item">
+                <div class="mision-num">
+                  <div class="number-outline">04</div>
+                </div>
+                <div class="collapse-overlay">
+                  <details class="collapse show">
+                    <summary class="collapse-preview">
+                      <span
+                        >Tham mưu về công tác đào tạo, bồi dưỡng; tổ chức thực
+                        hiện các lớp theo kế hoạch tỉnh giao, gồm các công
+                        việc:</span
+                      >
+                      <img src="/img/arrow-btn.png" class="arrow" alt="" />
+                    </summary>
+                    <div class="collapse-content">
+                      <p>
+                        – Xây dựng, trình xin ý kiến Hội đồng điều hành công tác
+                        đào tạo, bồi dưỡng của tỉnh kế hoạch đào tạo, bồi dưỡng
+                        hằng năm; phối hợp với Ban Tổ chức Tỉnh ủy, Sở Nội vụ và
+                        các cơ quan liên quan triển khai tổ chức các lớp đào
+                        tạo, bồi dưỡng Tỉnh giao.
+                      </p>
+                      <p>
+                        – Khảo sát, tổ chức chiêu sinh, mở các lớp đào tạo, bồi
+                        dưỡng, tập huấn cán bộ, công chức, viên chức theo nhu
+                        cầu đào tạo, bồi dưỡng cán bộ của các địa phương
+                      </p>
+                    </div>
+                  </details>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="mision-item">
+                <div class="mision-num">
+                  <div class="number-outline">05</div>
+                </div>
+                <div class="collapse-overlay">
+                  <details class="collapse show">
+                    <summary class="collapse-preview">
+                      <span
+                        >Tham mưu về công tác đào tạo, bồi dưỡng; tổ chức thực
+                        hiện các lớp theo kế hoạch tỉnh giao, gồm các công
+                        việc:</span
+                      >
+                      <img src="/img/arrow-btn.png" class="arrow" alt="" />
+                    </summary>
+                    <div class="collapse-content">
+                      <p>
+                        – Xây dựng, trình xin ý kiến Hội đồng điều hành công tác
+                        đào tạo, bồi dưỡng của tỉnh kế hoạch đào tạo, bồi dưỡng
+                        hằng năm; phối hợp với Ban Tổ chức Tỉnh ủy, Sở Nội vụ và
+                        các cơ quan liên quan triển khai tổ chức các lớp đào
+                        tạo, bồi dưỡng Tỉnh giao.
+                      </p>
+                      <p>
+                        – Khảo sát, tổ chức chiêu sinh, mở các lớp đào tạo, bồi
+                        dưỡng, tập huấn cán bộ, công chức, viên chức theo nhu
+                        cầu đào tạo, bồi dưỡng cán bộ của các địa phương
+                      </p>
+                    </div>
+                  </details>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="mision-item">
+                <div class="mision-num">
+                  <div class="number-outline">06</div>
+                </div>
+                <div class="collapse-overlay">
+                  <details class="collapse show">
+                    <summary class="collapse-preview">
+                      <span
+                        >Tham mưu về công tác đào tạo, bồi dưỡng; tổ chức thực
+                        hiện các lớp theo kế hoạch tỉnh giao, gồm các công
+                        việc:</span
+                      >
+                      <img src="/img/arrow-btn.png" class="arrow" alt="" />
+                    </summary>
+                    <div class="collapse-content">
+                      <p>
+                        – Xây dựng, trình xin ý kiến Hội đồng điều hành công tác
+                        đào tạo, bồi dưỡng của tỉnh kế hoạch đào tạo, bồi dưỡng
+                        hằng năm; phối hợp với Ban Tổ chức Tỉnh ủy, Sở Nội vụ và
+                        các cơ quan liên quan triển khai tổ chức các lớp đào
+                        tạo, bồi dưỡng Tỉnh giao.
+                      </p>
+                      <p>
+                        – Khảo sát, tổ chức chiêu sinh, mở các lớp đào tạo, bồi
+                        dưỡng, tập huấn cán bộ, công chức, viên chức theo nhu
+                        cầu đào tạo, bồi dưỡng cán bộ của các địa phương
+                      </p>
+                    </div>
+                  </details>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="position-relative department-img-wrap" data-aos="fade-up">
+        <div class="position-absolute title-wrap">
+          <div class="banner-wrapper">
+            <div class="banner-hexagon"></div>
+            <div class="banner-line"></div>
+            <div class="banner-section">
+              <span class="banner-text">TẬP THỂ PHÒNG</span>
+            </div>
+            <div class="banner-line"></div>
+            <div class="banner-hexagon"></div>
+          </div>
+        </div>
+        <div class="container-fluid department-img-content">
+          <div id="owl-carousel-department" class="owl-carousel">
+            <div class="item">
+              <img src="/img/more-1.jpg" alt="Banner 1" />
+            </div>
+            <div class="item">
+              <img src="/img/more-2.jpg" alt="Banner 2" />
+            </div>
+            <div class="item">
+              <img src="/img/more-3.jpg" alt="Banner 3" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer" data-aos="fade-up">
+        <div class="footer-left">
+          <h3>TRƯỜNG ĐÀO TẠO CÁN BỘ NGUYỄN VĂN CỪ</h3>
+          <p>
+            <i class="fas fa-landmark footer-icon"></i>
+            <strong>Cơ quan chủ quản:</strong> Tỉnh uỷ Quảng Ninh
+          </p>
+          <p>
+            <i class="fas fa-building footer-icon"></i>
+            <strong>Trụ sở chính:</strong> Khu Cát Thành, phường Đông Mai, tỉnh
+            Quảng Ninh
+          </p>
+          <p>
+            <i class="fas fa-map-marker-alt footer-icon"></i>
+            <strong>Phân hiệu:</strong> Khu Vườn Đào, phường Bãi Cháy, tỉnh
+            Quảng Ninh
+          </p>
+          <p>
+            <i class="fas fa-envelope footer-icon"></i>
+            <strong>Email:</strong> dtcbnvc@quangninh.gov.vn
+          </p>
+          <p>
+            <i class="fas fa-phone footer-icon"></i>
+            <strong>Điện thoại:</strong> 0203 3838313
+          </p>
+        </div>
+        <div class="footer-right">
+          <p>
+            <i class="fas fa-user footer-icon"></i> Người đang xem :
+            <strong>154.661.136</strong>
+          </p>
+          <p>
+            <i class="fas fa-users footer-icon"></i> Số lượt truy cập :
+            <strong>100</strong>
+          </p>
+        </div>
+      </div>
+
+      <div class="copyright">
+        Bản quyền thuộc về trường đào tạo cán bộ Nguyễn Văn Cừ
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      async
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // thời gian hiệu ứng (ms)
+      });
+    </script>
+    <script src="javascript.js" defer></script>
+  </body>
+</html>
